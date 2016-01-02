@@ -1,0 +1,58 @@
+check what is running if nothing then pull something from the queue 
+2 means blocked         -   b
+1 means running         -   r
+0 means queue           -   q
+-1 means unstarted      -   u
+-2 means terminated     -   t
+
+block when something is running
+
+input 5
+
+process 0 gets initalized after cycle 0
+process 1 gets intilaized after cycle 3
+process 2 gets initliazed after cylce 4
+
+
+Input 5
+1-      2   0   0
+2-      1   0   0
+3-      0   2   0       always check here
+4-      0   1   0
+5-      0   4   2
+6-      0   3   1       the issue seems to be after cycle 6 check process 0 quantum state
+7-      2   2   0       always check here
+8-      1   1   0
+9-      8   0   1       always check here
+10-     7   1   6       always check here
+11-     6   2   5  
+12-     5   1   4
+13-     4   2   3       
+14-     3   1   2
+15-     2   2   1       
+    *
+    *
+    *
+101-    4   1   5       last one that is correct
+102-    3   2   4
+103-    2   1   3
+104-    1   2   2
+105-    
+
+
+Input 4
+1-
+2-
+3-
+4-
+5-
+6-
+7-
+8-
+9-
+10-
+11-
+12-
+13-
+14-
+15-
